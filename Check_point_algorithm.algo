@@ -1,0 +1,14 @@
+ALGORITHM The_length_of_the_sentence
+VAR 
+    sentence,i,lenSen,numWord,numVow : INTEGER;
+
+BEGIN
+    FOR i FROM 1 TO sentence.length DO
+    IF ( sentence[i] <> " " ) THEN 
+    lenSen := lenSen + sentence[i];
+    ELSE IF ( sentence[i] = " " ) THEN
+    numWord := numWord + sentence[i];
+    ELSE IF ( sentence[i] = "a" or sentence[i] = "i" or sentence[i] = "e" or sentence[i] = "o" or sentence[i] = "u" or sentence[i] = "y" ) THEN 
+    numVow := numVow + sentence[i];
+    END IF
+END
